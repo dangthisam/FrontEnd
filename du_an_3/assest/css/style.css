@@ -19,6 +19,27 @@ body {
   max-width: calc(100% - 48px);
   margin: 0 auto;
 }
+.control {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+}
+.control-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #575f66;
+  background: #fff;
+  cursor: pointer;
+}
+.control-btn:hover {
+  background: #2e80ce;
+  border-color: #2e80ce;
+  color: #fff;
+}
 .btn {
   /* the inline ko the can thiep kich thuoc cho no duoc */
   display: inline-block;
@@ -340,4 +361,118 @@ a {
 }
 .about-content__btn {
   margin-top: 38px;
+}
+.team-header {
+  margin-top: 85px;
+  text-align: center;
+}
+
+.team__cta {
+  margin-top: 38px;
+}
+.team__list {
+  display: grid;
+  margin-top: 70px;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+.team-item:hover .team-item__thumb {
+  transform: scale(1.2);
+}
+.team-item__thumb {
+  height: 290px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.team-item__img-bg {
+  padding-top: 28px;
+  width: 270px;
+  height: 318px;
+  border-radius: 6px;
+  background: #eaf6ff;
+  overflow: hidden;
+}
+.team-item__name {
+  color: #10375c;
+  text-align: center;
+
+  font-size: 1.6rem;
+  margin-top: 12px;
+  line-height: 1.75;
+}
+.team-item__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86;
+}
+.team__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 38px;
+}
+/* .install__iner {
+  position: relative;
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  align-items: center;
+
+  height: 427px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+.install__img {
+  position: absolute;
+  bottom: 0px;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+.install__heading {
+  width: 489px;
+} */
+.install__iner {
+  position: relative;
+  display: flex;
+  margin: 180px 0 85px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  height: 427px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+.install__img {
+  position: absolute;
+  top: -95px;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+.install__content {
+  max-width: 586px;
+}
+.install__heading {
+  max-width: 489px;
+  color: #fff;
+}
+.install__desc {
+  color: #fff;
+  margin-top: 18px;
+  font-size: 1.8rem;
+
+  font-weight: 300;
+  line-height: 1.67;
+}
+
+.install__row {
+  margin-top: 38px;
+  display: flex;
+  column-gap: 28px;
+  align-items: center;
 }
