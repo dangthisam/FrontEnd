@@ -1,0 +1,38 @@
+.spiner {
+  --size: 200px;
+  --first-color: blue;
+  --second-color: yellow;
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+}
+.spiner::after {
+  content: "";
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border: 20px solid var(--first-color);
+  border-top: 20px solid var(--second-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  box-shadow: 0 0 20px var(--first-color);
+  animation: spin 1s ease-in-out infinite alternate-reverse;
+}
+.container {
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
