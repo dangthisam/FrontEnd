@@ -1,0 +1,270 @@
+/* laptop */
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* tablet  & mobile  */
+@media (max-width: 991.98px) {
+  .navbar {
+    display: none;
+  }
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  .menu-header__icon {
+    position: absolute;
+    top: 38px;
+    left: 20px;
+    color: #fff;
+    width: 24px;
+  }
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    inset: 0;
+    z-index: 1;
+    transition: 0.2s;
+  }
+  /* khi label dc aans thi lop phu mat khi bo ra  */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    background-color: black;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 1s;
+    padding: 60px;
+  }
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  .menu__close {
+    width: 24px;
+    color: #fff;
+  }
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar__list {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+  #navbar__list--mobile {
+    margin-top: 25px;
+  }
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+  .navbar__link:hover {
+    background-color: #000fff37;
+  }
+  .hero {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .hero__content {
+    order: 2;
+  }
+  .hero__media {
+    order: 1;
+  }
+  .hero__content {
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+  }
+  .hero__row {
+    display: flex;
+    justify-content: center;
+  }
+  .service__row {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .service__img {
+    width: 100%;
+  }
+  .service-item {
+    width: 90%;
+    text-align: start;
+  }
+  .service__list {
+    text-align: center;
+  }
+  .work__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .about-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .about__media {
+    width: 100%;
+  }
+  .about__img--small {
+    display: none;
+  }
+  .about__img--big {
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px auto;
+  }
+  .about-content {
+    width: 90%;
+    text-align: center;
+  }
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .team-item__thumb {
+    margin: 0 auto;
+  }
+  .install__img {
+    display: none;
+  }
+  .install__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .blog__inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .blog__list {
+    order: 1;
+  }
+  .blog__content {
+    order: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog__heading {
+    max-width: 90%;
+  }
+  .footer__top {
+    grid-template-columns: repeat();
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer__column1 {
+    display: none;
+  }
+  .footer__top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+  .header__action {
+    display: none;
+  }
+  .menu-header__icon {
+    top: 16px;
+  }
+  .menu-drawer {
+    inset: 0 20% 0 0;
+    padding: 40px;
+  }
+  .navbar__item {
+    list-style: none;
+  }
+  .separate {
+    border-top: 1.5px solid greenyellow;
+    margin-top: 10px;
+  }
+  .hero__img-small {
+    display: none;
+  }
+  .hero__img-large {
+    width: 100%;
+    height: auto;
+  }
+  .hero__heading {
+    font-size: 3rem;
+  }
+  .hero__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .service {
+    padding: 70px 0;
+  }
+
+  .service__desc {
+    width: 93%;
+  }
+  .service__img {
+    height: auto;
+  }
+  .work__desc {
+    width: 100%;
+  }
+  .work-item {
+    padding: 20px;
+  }
+  .about {
+    margin-top: 20px;
+    padding: 40px 0;
+  }
+  .section-heading {
+    font-size: 3rem;
+  }
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+
+  .install__inner {
+    margin: 40px 0;
+    padding: 0 8px;
+  }
+  .install__content {
+    min-width: 250px;
+  }
+  .install__desc {
+    font-size: 1.3rem;
+  }
+  .blog__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .blog__heading {
+    text-align: center;
+  }
+  .appointment__inner {
+    padding: 30px 5px;
+  }
+  .footer__top {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .footer__copyright {
+    margin-top: 40px;
+  }
+}
