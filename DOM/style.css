@@ -1,0 +1,18 @@
+body {
+  margin-right: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, red, blue);
+}
+.container-clock {
+  margin: 300px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 100px;
+  border-radius: 12px;
+  box-shadow: 0 0 40px green;
+  color: aqua;
+  font-size: 70px;
+}
